@@ -1,0 +1,33 @@
+version : '2'
+services:
+  
+  app:
+    build:
+      context: . 
+      dockerfile: app.dockerfile
+    ports: 
+      - "8080"
+    networks:
+      - service-network
+    volumes:
+      - .:/vol/development
+    depends_on:
+      - mysqldb
+  
+  mysqldb:
+    build:
+      context: . 
+      dockerfile: mysql.dockerfile
+    ports:
+      - "3306"
+    networks:
+      - service-network
+    environment:
+      MYSQL_DATABASE: microservice
+      MYSQL_USER: microservice
+      MYSQL_PASSWORD: microservice
+      MYSQL_ROOT_PASSWORD: microservice
+    
+networks:
+  service-network:
+    driver: bridge

@@ -1,0 +1,9 @@
+/vol/development/src/main/java/com/projects/micro/repositories/RequestDetailRepository.java
+/vol/development/src/main/java/com/projects/micro/controllers/RequestDetailController.java
+/vol/development/src/main/java/com/projects/micro/config/JpaConfig.java
+/vol/development/src/main/java/com/projects/micro/exceptions/RequestNotFoundException.java
+/vol/development/src/main/java/com/projects/micro/services/RequestService.java
+/vol/development/src/main/java/com/projects/micro/models/RequestDetail.java
+/vol/development/src/main/java/com/projects/micro/controllers/RequestDetailSearchController.java
+/vol/development/src/main/java/hello/Application.java
+/vol/development/src/main/java/com/projects/micro/validators/RequestDetailValidator.java
