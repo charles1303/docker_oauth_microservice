@@ -30,7 +30,10 @@ import_files:
 
 ribbon:
   ServerListRefreshInterval: 1000
-
+security:
+  basic:
+    enable: false
+  ignored: /**
 endpoints:
   health:
     sensitive: false
